@@ -17,7 +17,7 @@ $subjectID = (Get-AzureADUser -SearchString (Get-AzureADCurrentSessionInfo).Acco
 
 # If latency causes either $tenantId or $subjectId to fail, reverting to manual entry
 if (!$tenantID) {$tenantId = Read-Host "What is the tenant ID? (can be found at https://portal.azure.us/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)"}
-if (!$subjectID) {$subjectID = Read-Host "Who is using this? (username.az0@jsf.mil/username@jsfjpo.onmicrosoft.com)" ; $subjectID = (Get-AzureADUser -SearchString $subject).ObjectId}
+if (!$subjectID) {$subjectID = Read-Host "Who is using this? (username@jsfjpo.onmicrosoft.com)" ; $subjectID = (Get-AzureADUser -SearchString $subject).ObjectId}
 
 # Changing window title
 $oldUI = $Host.UI.RawUI.WindowTitle
