@@ -808,6 +808,6 @@
     </Color>
   </Values>
   <Name>Tony</Name>
-  <FontFamily>Consolas</FontFamily>
-  <FontSize>10</FontSize>
+  <FontFamily>Lucida Console</FontFamily>
+  <FontSize>9</FontSize>
 </StorableColorTheme>
